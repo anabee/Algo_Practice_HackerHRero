@@ -28,3 +28,32 @@ return num
 }; 
 
 printEven4to22();
+
+// #8
+// Add odd integers from -25,000 to 30,000 and have the function return its final sum. Is there a short cut?
+
+function addOddInts(){
+    var sum = 0 
+
+for (var i=-24999; i < 30000; i+=2){
+    sum +=i; 
+    }
+return sum
+}
+
+addOddInts();
+
+// #9
+// Objectives
+// Given an array, write a function that prints/logs each number in the array.
+
+function printArr(arr){
+    for (let i = 0; i < arr.length; i++) {
+        console.log(rr[i]);
+        
+    }
+}
+
+printArr([1,2,3]);
+
+// #10
