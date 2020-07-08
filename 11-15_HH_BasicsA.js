@@ -49,3 +49,36 @@ function squareVal(arr){
         
     return squaredArr 
 }
+
+// #14
+// Objectives
+// Given an array with multiple values, write a function that replaces any negative numbers within the array with the value of 0. When the program is done the array should contain no negative values. (e.g. [1,5,10,-2] will become [1,5,10,0])
+
+function noNeg(arr){
+    var positiveArr = []
+
+for ( var i=0; i< arr.length; i++){
+    if(arr[i] < 0){
+        var newInd = arr[i] * 0;
+        
+        positiveArr.push(newInd);
+    } else {
+        positiveArr.push(arr[i])    
+    }
+    }
+    
+return positiveArr
+}
+
+// #15
+// Objectives
+// Given an array of multiple values, write a function that returns the sum of its numbers. For example, findSum([1,2,3]) should return 6.
+
+function findSum(arr){
+var sum = 0
+
+for ( var i=0; i< arr.length; i++){
+    sum = sum + arr[i]
+    }
+return sum 
+}
