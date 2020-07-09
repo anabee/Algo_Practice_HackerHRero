@@ -48,3 +48,15 @@ function greaterThanSecond(arr){
     return newArr   
     }
 }
+
+// #24
+// Objectives
+// Write a function that will swap the first and last values in any given array. The default minimum length of the array is 2. For example swapFirstLast([1,3,5]) should return [5, 3, 1]. swapFirstLast([1,3,5,7,9]) should return [9, 3, 5, 7, 1].
+
+function swapFirstLast(arr){
+    var firstInd = arr[0]
+    arr[0] = arr[arr.length -1]
+    arr[arr.length -1] = firstInd
+
+return arr
+}
