@@ -73,3 +73,31 @@ function sigma(num){
 
     return sum
 }
+
+// #8
+// Objectives
+// Just the Facts, ma’am. Factorials, that is. Write a function factorial(num) that, given a number, returns the product (multiplication) of all positive integers from 1 up to number (inclusive). For example, factorial(3)=6(or1 * 2 * 3);factorial(5)=120(or1 * 2 * 3 * 4 * 5).
+
+function factorial(num) {
+    var factorial = num 
+
+    for(var i=1; i<num; i++){
+    factorial *= (num - i)
+    }
+    
+    return factorial 
+}
+
+// #9
+// Objectives
+// Given array, swap first and last, second and second-to-last, third and third-to- last, etc. Have the function return this swapped array. For example swapTwoardCenter([true,42,"Ada",2,"pizza"]) should return ["pizza",2,"Ada",42,true]. Passing [1,2,3,4,5,6] should return [6,5,4,3,2,1].
+
+function swapTowardCenter(arr){
+    for (let i = 0; i < arr.length/2; i++) {
+        var temporaryVarForSwitchingIndex = arr[i]
+        arr[i] = arr[arr.length - 1-i] 
+        arr[arr.length - 1-i] = temporaryVarForSwitchingIndex 
+        
+    }
+    return arr 
+}
