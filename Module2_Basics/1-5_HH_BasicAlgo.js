@@ -63,3 +63,13 @@ function returnArrayCountGreaterThanY(arr, y){
     }
 return count;
 }
+
+// #7
+// Objectives
+// Implement function sigma(num) that given a number, returns the sum of all positive integers up to number (inclusive). Ex.:sigma(3)=6(or1 + 2 + 3); sigma(5)=15(or1 + 2 + 3 + 4 + 5).
+
+function sigma(num){
+    var sum = (num*(num+1))/2
+
+    return sum
+}
